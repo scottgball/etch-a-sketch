@@ -1,12 +1,25 @@
+:root {
+  --columns: 16;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .container {
+  width: 900px;
   display: grid;
-  grid-template-columns: repeat(16, 5vh);
+  grid-template-columns: repeat(var(--columns), 1fr);
   gap: 5px;
-  justify-content: center;
+  
   
 }
 
 .square {
+  margin: 0;
+  padding: 0;
   background-color: red;
   aspect-ratio: 1;
   box-sizing: border-box;
