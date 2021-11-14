@@ -1,26 +1,37 @@
 :root {
   --columns: 16;
+  --button-colors: rgba(200, 100, 41, 0.7)
 }
 
 body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: rgb(110, 255, 211);
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 28px;
+  font-weight: 900;
+  border-radius: 5%;
+  color: var(--button-colors);
+  background-color: rgb(252, 252, 240);
+  border: 5px solid var(--button-colors);
+  
 }
 
 .container {
-  width: 900px;
+  width: 75vh;
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
-  gap: 5px;
-  
-  
+  gap: 10px;
 }
 
 .square {
   margin: 0;
   padding: 0;
-  background-color: red;
+  background-color: orangered;
   aspect-ratio: 1;
-  box-sizing: border-box;
 }
