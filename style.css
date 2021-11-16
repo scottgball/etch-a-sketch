@@ -22,6 +22,10 @@ button {
   
 }
 
+button:hover {
+  background-color: rgb(236, 236, 236);
+}
+
 .container {
   width: 75vh;
   display: grid;
